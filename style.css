@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-color: #dde5e8;
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+#search-bar {
+    padding: 10px;
+}
+
+.search-btn {
+    background-color: darkslategrey;
+    color: white;
+    padding: 5px;
+}
+
+.container-cards {
+    background-color: #0081A7;
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 200px;
+    padding: 50px;
+    gap: 30px;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0081A7;
+    height: 100vh;
+}
+
+
+
+.filter-btns {
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+}
+
+.blue-circle img {
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 200px; 
+    height: 250px; 
+    border: 1px solid #FDFCDC;
+    background-color: rgb(244, 241, 241);
+    object-fit: cover;
+    justify-content: space-between;
+    border-radius: 0px;
+
+    box-shadow: 9px 9px 17px 5px #000000;
+}
+
+.shiny {
+    border-top: 1px solid black;
+}
+
+  .zoom:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+.card .circle-div {
+    background-color: #0190FF;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+}
+
+.card {
+    display: flex;
+    flex-basis: 250px;
+}
+
+.stat-defense, .stat-speed, .stat-attack {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.types {
+    display: flex;
+    gap: 5px;
+}
+
+.types span {
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#type {
+    background-color: #0081A7;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+#hp-stat {
+    background-color: white;
+    height: 25px;
+    border-radius: 25%;
+    padding: 5px;
+}
+
+/* HTML: <div class="loader"></div> */
+
+.hidden {
+    display: none;
+}
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 1s steps(4) infinite;
+  }
+  .loader:before {
+    content:"Loading..."
+  }
+  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+
+
+

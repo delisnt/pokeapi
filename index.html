@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="filter-btns" id="clear-filter" data-type="clear">Clear Button</button>
+        <button class="filter-btns" id="normal-type" data-type="normal">Normal type</button>
+        <button class="filter-btns" id="fire-type" data-type="fire">Fire type</button>
+        <button class="filter-btns" id="water-type" data-type="water">Water type</button>
+        <button class="filter-btns" id="electric-type" data-type="electric">Electric type</button>
+        <button class="filter-btns" id="grass-type" data-type="grass">Grass type</button>
+        <button class="filter-btns" id="ice-type" data-type="ice">Ice type</button>
+        <button class="filter-btns" id="fighting-type" data-type="fighting">Fighting type</button>
+        <button class="filter-btns" id="poison-type" data-type="poison">Poison type</button>
+        <button class="filter-btns" id="ground-type" data-type="ground">Ground type</button>
+        <button class="filter-btns" id="flying-type" data-type="flying">Flying type</button>
+        <button class="filter-btns" id="psychic-type" data-type="psychic">Psychic type</button>
+        <button class="filter-btns" id="bug-type" data-type="bug">Bug type</button>
+        <button class="filter-btns" id="rock-type" data-type="rock">Rock type</button>
+        <button class="filter-btns" id="ghost-type" data-type="ghost">Ghost type</button>
+        <input type="text" id="search-bar" placeholder="Cerca un pokemon...">
+        <button class="search-btn">CERCA</button>
+    </nav>
+    <div class="loader-container">
+        <div id="loader" class="loader"></div>
+    </div>
+    <div class="container">
+        <div class="container-cards">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
